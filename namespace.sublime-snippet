@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[namespace ${1:App}${TM_FILEPATH/(?:.*app)|(\/)([^\/]+)(?=\/)|(?:\/[^\/]+\.php$)/(?1:\\$^N:$^N)/g};
+
+class ${TM_FILENAME/\.php$//}
+{
+    function __construct( )
+    {
+
+    }
+
+    ${0}
+
+}]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>namespace</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+   <scope>source.php</scope>
+</snippet>
